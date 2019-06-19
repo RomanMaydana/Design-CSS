@@ -1,0 +1,29 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+.container{
+    display: grid;
+    grid-template: 50px 1fr 50px / 100px 1fr;
+    grid-template-areas: "header header""left contenido""footer footer";
+    grid-gap: 10px;
+    height: 100vh;
+}
+.item{
+    background: lightblue;
+    padding: 10px;
+    border: 1px solid red;
+}
+.header{
+    grid-area: header;
+}
+.left{
+    grid-area: left;
+}
+.contenido{
+    grid-area: contenido;
+}
+.footer{
+    grid-area: footer;
+}

@@ -1,0 +1,25 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(4,100px);
+    height: 100vh;
+    grid-gap: 5px;
+    /* justify-content: start ende center stretch space-around space-between space-evenly; */
+    justify-content: center;
+    /* align-content: start ende center stretch space-around space-between space-evenly; */
+    align-content: center;
+}
+.item:nth-of-type(5){
+    /* align-self: start;
+    justify-self: end; */
+}
+.item{
+    background: lightblue;
+    padding: 10px;
+    border: 1px solid rgb(116, 41, 41);
+}
